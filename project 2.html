@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 2</title>
+    <style type="text/css">
+    fieldset { background: lightyellow;border:10px solid yellow;
+             margin-bottom: 10px;width:720px;}
+        
+
+    </style>
+</head>
+<body>
+    <form method="post">
+    <fieldset id="yourFace">
+        <legend>Your Face</legend>
+            <label for=profilePic>Your Image</label>
+        <input type="file" id="profilePic" name="profilePic" required><br>
+            <label for="preview">Image Preview:</label>
+        <img src="" id="preview">
+    </fieldset>
+    <fieldset id="generalDetail">
+        <legend> Your General Details</legend>
+            <label for="detailName">Name:</label>
+        <input type="text" id="detailName" name="detailName" required><br>
+            <label> Gender:</label>
+        <input type="radio" id="genderMale" name="genderMale" required>
+            <label for="genderMale">Male</label>
+        <input type="radio" id="genderFemale" id="genderFemale" required>
+            <label for="genderFemale">Female</label>
+        <input type="radio" id="genderOther" id="genderOther" required>
+            <label for="genderOther">Other</label>
+        <br>
+            <label for="age"> Age:</label>
+        <input type="number" id="age" name="age" required><br>
+            <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" id="dob"><br>
+            <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br>
+            <label for="country">Which Country:</label>
+        <select id="country" name="country">
+            <option value="United States">United States</option>
+            <option value="England">England</option>
+            <option value="Mexico">Mexico</option>
+            <option value="France">France</option>
+            <option value="Russia">Russia</option>
+            <option value="CountryNotShown">Country Not Shown</option>
+        </select>
+    </fieldset>
+    <fieldset id="yourIndicators">
+        <legend> Your Indicators</legend>
+            <label for="height">Height:</label>
+            <label for="height">Short</label>
+        <input type="range" id="height" min="0" max="100" name="height">
+            <label for="height">Tall</label>
+        <br>
+            <label for="money">Salary:</label>
+            <label for="money">Poor</label>
+        <input type="range" id="money" min="0" max="100" name="money">
+            <label for="money">Rich</label>
+    </fieldset>
+    <fieldset id="contactInfo">
+        <legend> Your Contact Information</legend>
+            <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+            <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile"><br>
+            <label for="address">Address:</label>
+        <textarea id="address"></textarea><br>
+        <label for="contactInfo"> Method to contact you:</label>
+        <input type="checkbox" id="cEmail" name="cEmail"> <label for="cEmail">Email</label>
+        <input type="checkbox" id="cWhats" name="cWhats"> <label for="cWhats">Whatsapp</label>
+        <input type="checkbox" id="cChat" name="cChat"> <label for="cChat">In-app Chat</label>
+    </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
